@@ -479,7 +479,7 @@ const Hero = () => {
             </a>
             
             <a 
-              href="/cv/Resume.pdf" 
+              href="/cv/Resume-New.pdf" 
               download="CV-Adrian-Fajar-Ramdani.pdf" 
               target="_blank"
               rel="noopener noreferrer"
