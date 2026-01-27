@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   Github, 
+  Gitlab,
   Linkedin, 
   Mail, 
   Phone, 
@@ -66,7 +67,8 @@ const personalInfo = {
     email: "adrianramdani856@gmail.com",
     phone: "+62 81324436004",
     linkedin: "https://www.linkedin.com/in/adrian-fajar-0521091b4/" ,
-    gitHub: "https://github.com/adrianRamdani"
+    gitHub: "https://github.com/adrianRamdani",
+    gitLab: "https://gitlab.com/adrianfajar856"
   },
   summary: "With 4+ years of experience, I specialize in building scalable web applications. From complex backend systems monitoring thousands of machines to polished frontend interfaces for e-commerce. I combine technical depth in PHP/Laravel and JavaScript/React with a pragmatic approach to solving business problems."
 };
@@ -495,6 +497,9 @@ const Hero = () => {
             <a href={personalInfo.contact.linkedin} className="text-slate-400 hover:text-blue-400 transition-colors"><Linkedin size={24} /></a>
             <a href={`mailto:${personalInfo.contact.email}`} className="text-slate-400 hover:text-blue-400 transition-colors"><Mail size={24} /></a>
             <a href={personalInfo.contact.gitHub} className="text-slate-400 hover:text-blue-400 transition-colors"><Github size={24} /></a>
+            <a href={personalInfo.contact.gitLab} className="text-slate-400 hover:text-orange-400 transition-colors">
+              <Gitlab size={24} />
+            </a>
           </motion.div>
         </motion.div>
 
@@ -820,6 +825,9 @@ const Footer = () => {
         <div className="flex justify-center gap-8 mb-8">
           <a href={personalInfo.contact.linkedin} className="text-slate-500 hover:text-white transition-colors">LinkedIn</a>
           <a href={personalInfo.contact.gitHub} className="text-slate-500 hover:text-white transition-colors">GitHub</a>
+          <a href={personalInfo.contact.gitLab} className="text-slate-500 hover:text-white transition-colors">
+            GitLab
+          </a>
           <a href={`mailto:${personalInfo.contact.email}`} className="text-slate-500 hover:text-white transition-colors">Email</a>
         </div>
         <div className="text-slate-600 text-sm">
